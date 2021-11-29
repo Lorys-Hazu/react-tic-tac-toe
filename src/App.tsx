@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import './tictactoe';
+import { Board } from './components/Board';
+import { defaultSkins, initialState } from './tictactoe';
+import { Scoreboard } from './components/Scoreboard';
+import { SkinSelector } from './components/SkinSelector';
 
 function App() {
+
+  const [board, setBoard] = useState(initialState);
+
+  const [skins, setSkins] = useState(defaultSkins)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <Scoreboard board={board} skins={skins}/>
       </header>
+      <Board board={board} setBoard={setBoard} skins={skins}/>
+      <footer>
+        <SkinSelector player={1} skins={skins} setSkins={setSkins}/>
+        <button onClick={()=>setBoard(initialState)}>Restart</button> 
+        <SkinSelector player={2} skins={skins} setSkins={setSkins}/>
+      </footer>
     </div>
   );
 }
