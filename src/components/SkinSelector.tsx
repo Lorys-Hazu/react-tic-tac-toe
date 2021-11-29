@@ -17,7 +17,7 @@ export const SkinSelector = ({player, skins, setSkins}: skinSelectorProps) => {
         <div className="skinSelector">
             {
                 skinList.map(skin => (
-                    <div className={skin === skins[player] ? 'selectedIcon' : 'notSelectedIcon'}><img onClick={()=>switchIcon(skin)} className="cellIcon" src={findUrl(skin)}/></div>
+                    <div className={skin === skins[player] ? 'selectedIcon' : 'notSelectedIcon'}><img key={`${skin}.${player}`} onClick={()=>switchIcon(skin)} className="cellIcon" src={findUrl(skin)} alt={`${skin}'s icon'`}/></div>
                 ))
             }
         </div>

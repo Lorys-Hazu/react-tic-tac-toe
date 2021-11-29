@@ -8,7 +8,7 @@ The functionnality are:
 
 Enjoy !
 
-You can play this game on this [link](url)
+You can play this game on this [link](https://lorys-tic-tac-toe.netlify.app)
 
 ## Installation
 
