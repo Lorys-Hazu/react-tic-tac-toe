@@ -14,7 +14,7 @@ export const skinList = [
     "square"
 ]
 export const skinURL = [ 
-        ["circle","https://cdn-icons-png.flaticon.com/512/808/808569.png"],
+        ["circle","https://cdn-icons.flaticon.com/png/512/597/premium/597669.png?token=exp=1642107192~hmac=dca5e0e4b1d603dc95bba41430aca7c9"],
         ["cross", "https://cdn-icons-png.flaticon.com/512/748/748122.png"],
         ["triangle","https://cdn-icons-png.flaticon.com/512/481/481099.png"],
         ["square", "https://cdn-icons-png.flaticon.com/512/545/545666.png"]

@@ -39,8 +39,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  width: 120px;
+  height: 70px;
+  width: 70px;
   margin: 10px;
 }
 
@@ -75,7 +75,7 @@ table {
 }
 
 .SBIcon {
-  height: 100px;
+  height: 50px;
 }
 
 button {
