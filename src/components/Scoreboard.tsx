@@ -26,7 +26,7 @@ export const Scoreboard = ({board, skins}:SBProps) => {
                 <p>{`wins: ${pOneScore}`}</p>
             </div>
             <h1>
-                {getWinner(board) ? `player ${getWinner(board)} wins` : isFinished(board) ? "It's a draw" : <img alt="currently playing" className="SBIcon" src={findUrl(skins[getNextPlayer(board)])}/>}
+                {getWinner(board) ? `Player ${getWinner(board)} wins` : isFinished(board) ? "It's a draw" : <img alt="currently playing" className="SBIcon" src={findUrl(skins[getNextPlayer(board)])}/>}
             </h1>
             <div>
                 <img className="SBIcon" src={findUrl(skins[2])} alt={"Player 1 skin is a " + skins[2]}/>
