@@ -11,6 +11,7 @@ export const Scoreboard = ({board, skins}:SBProps) => {
     const [pOneScore, setp1Score] = useState(0)
     const [pTwoScore, setp2Score] = useState(0)
 
+    // This function increment the player score when he wins
     useEffect(() => {
         const checkWinner = () => {
             getWinner(board) 

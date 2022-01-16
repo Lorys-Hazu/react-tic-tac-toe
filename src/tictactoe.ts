@@ -1,3 +1,4 @@
+// Creating bunch of type for the whole app
 export type PlayerType = 1 | 2;
 export type PlayerSkinType = {
     1: string,
@@ -7,6 +8,7 @@ export type CellType = PlayerType | null;
 export type RowType = CellType[];
 export type BoardType = RowType[];
 
+// Define skins name and store theyr URL (we're getting them on flaticon)
 export const skinList = [
     "circle",
     "cross",
@@ -19,7 +21,7 @@ export const skinURL = [
         ["triangle","https://cdn-icons-png.flaticon.com/512/481/481099.png"],
         ["square", "https://cdn-icons-png.flaticon.com/512/545/545666.png"]
 ]
-
+// This func associate a name with its URL
 export const findUrl = (name: string) => skinURL.filter(skin => skin[0] === name)[0][1]
 
 export const defaultSkins: PlayerSkinType = {
@@ -27,6 +29,7 @@ export const defaultSkins: PlayerSkinType = {
     2: skinList[1]
 }
 
+// All the tictactoe logic is down there
 export const initialState: BoardType = [
   [null, null, null],
   [null, null, null],

@@ -7,7 +7,7 @@ type skinSelectorProps = {
 }
 
 export const SkinSelector = ({player, skins, setSkins}: skinSelectorProps) => {
-
+    // This function switch the player's skin depending on which icon he clicked on
     const switchIcon = (selectedSkin:string) => {
         player === 1 
         ? setSkins({1: selectedSkin, 2: skins[2]})
