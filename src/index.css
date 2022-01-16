@@ -144,3 +144,23 @@ button:hover{
     height: 30px;
   }
 }
+
+@media (max-width: 450px) {
+
+  td {
+    width: 100px;
+    height: 100px;
+  }
+  .cellIcon {
+    height: 50px;
+  }
+
+  .SBIcon {
+    height: 25px;
+  }
+
+  .skinSelector > div {
+    height: 35px;
+    width: 35px;
+  }  
+}
